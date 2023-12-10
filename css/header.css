@@ -1,0 +1,56 @@
+.header {
+    background-color: var(--accent-color);
+    padding: 5px;
+}
+
+.header__title,
+.header__logo {
+ font-size: 3.5rem;
+ font-weight: bold;
+ text-align: center;
+ text-transform: uppercase;
+}
+.header__menu {
+    display: flex;
+    flex-direction: column;
+}
+.header .menu__item {
+    color:var(--text-color);
+    text-decoration: none;
+
+}
+.header .menu__item:hover {
+    text-decoration: underline;
+
+}
+@media(min-width:500px) {
+    .header__nav{
+        display: flex;
+    }
+    .header__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+    
+
+}
+.header__banner {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/baby-yoda.svg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: 50% 36%;
+    display: flex;/* фіксуємо*/
+    align-items: center;/*по вертикалі*/
+    justify-content: center; /*по горизонталі стає*/
+    flex-direction: column;/*в колонку*/
+
+
+    /*background-attachment: fixed;* --ПАРАЛАКС/
+
+    /* ctr+f5 - очистити кеш*/
+}
+.header__title {
+    color: var(--text-color-alternative);
+}
